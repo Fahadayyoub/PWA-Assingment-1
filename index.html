@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script
+        src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+    
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+            <style>
+                button:hover{background-color: yellowgreen;}
+                
+                button{background-color: black;border-radius: 10px;
+                font-size:20px;
+            font-family: Georgia, 'Times New Roman', Times, serif }
+                img{width: 40px;
+                border-radius: 25px;
+    }
+    .words{color: whitesmoke}
+            </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <nav>
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo">Logo</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                  
+                    <li><button onclick="getuser()">
+                            <img src="git.png" width="25px" align="middle"/>
+                      <span class="words">Github Users</span>  
+                    </button></li>
+                  </ul>
+                </div>
+              </nav>
+            
+              <ul class="sidenav" id="mobile-demo">
+               
+                    <li><button onclick="getuser()">
+                            <img src="git.png" width="25px" align="middle"/>
+                      <span class="words">Github Users</span>  
+                    </button></li>
+              </ul>
+
+              <table id="main" class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">URL</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Admin</th>
+                        <th scope="col">Picture</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table_inner">
+                     
+                    </tbody>
+                  </table>
+                      
+</body>
+</html>
